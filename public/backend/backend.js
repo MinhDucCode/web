@@ -33,8 +33,9 @@ function loginUser(event) {
 
     // Tạo người dùng mẫu
     const sampleUsers = [
-        { name: "Novenber", MSSV: "501230192", password: "123456" },
-        { name: "Dev", MSSV: "501230141", password: "123456" }
+        { name: "Admin", MSSV: "admin", password: "123456" },
+        { name: "User1", MSSV: "user1", password: "password1" },
+        { name: "User2", MSSV: "user2", password: "password2" }
     ];
     
     // Lưu người dùng mẫu vào localStorage hoặc cơ sở dữ liệu
@@ -47,6 +48,7 @@ function loginUser(event) {
 
     if (user && user.password === password) {
         // User exists and password matches
+        alert('Đăng nhập thành công!');
         localStorage.setItem('loggedInUser', MSSV); // Save the logged in user's MSSV
         window.location.href = 'page.html'; // Redirect to another page (change 'page.html' to your target page)
     } else if (user) {
@@ -190,6 +192,7 @@ function loginAdmin(event) {
     // Check if the admin credentials are correct
     if (username === 'admin' && password === '123456') {
         // Admin credentials match
+        alert('Đăng nhập thành công!');
         localStorage.setItem('loggedInUser', username); // Save the logged in user's username
         window.location.href = 'admin.html'; // Redirect to admin page
     } else {

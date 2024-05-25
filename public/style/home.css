@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #003366;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -192,30 +192,3 @@ input[type="submit"] {
     height: 450px;
     border: 0;
 }
-@keyframes colorChange {
-    0% {
-        color: red;
-    }
-    25% {
-        color: orange;
-    }
-    50% {
-        color: yellow;
-    }
-    75% {
-        color: green;
-    }
-    100% {
-        color: blue;
-    }
-}
-
-@keyframes move {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
